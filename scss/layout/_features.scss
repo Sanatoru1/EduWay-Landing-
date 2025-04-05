@@ -1,0 +1,53 @@
+@import "../scss-utils/variables";
+@import "../scss-utils/mixins";
+
+.features-phone {
+    display: none;
+}
+
+.features {
+    margin-bottom: $margin-small;
+    &_wrp {
+        @include flex-row();
+
+        .first-side {
+            max-width: 49%;
+            font-size: 1.8rem;
+            &__title {
+                @include text($font-size-sl,$clr-white, 700,inherit);
+            }
+        }
+        .second-side {
+            max-width: 49%;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        display: none;
+    }
+
+    .features-phone {
+        display: block;
+        margin-bottom: $margin-regular;
+
+        img {
+            width: 95%;
+        }
+
+        .container {
+            .features-phone_wrp {
+                .first-side {
+                    max-width: 100%;
+                    font-size: $font-size-xm;
+                    margin-bottom: $margin-regular;
+                    &__title {
+                        @include text($font-size-l, $clr-white,700,inherit);
+                    }
+                }
+            }
+        }
+    }
+}

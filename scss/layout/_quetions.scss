@@ -1,0 +1,61 @@
+@import "../scss-utils/variables", "../scss-utils/mixins";
+
+.questions {
+  .questions-title {
+    @include text($font-size-xxl, #fff, 600, inherit);
+    text-align: center;
+
+    margin-bottom: $margin-xsmall;
+  }
+}
+
+.accordion {
+  margin: 0 auto;
+  margin-bottom: $margin-xsmall;
+  .accordion-item {
+    font-size: $font-size-m;
+
+    border-radius: $radius-small;
+
+    padding: $padding-xsmall;
+
+    background: #222222;
+    .accordion-title {
+      display: flex;
+      align-items: center;
+
+      cursor: pointer;
+
+      &:after {
+        content: "+";
+        font-size: 1.5em;
+
+        margin-left: auto;
+
+        transition: 1s;
+      }
+    }
+
+    .accordion-answer {
+      text-decoration:overline;
+      max-height: 0;
+      overflow: hidden;
+      transition: $transition-fast max-height;
+      // transition: 1s ease max-height;
+    }
+
+    &.active {
+      .accordion-title:after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    .accordion-item {
+      font-size: 3rem;
+    }
+  }
+}

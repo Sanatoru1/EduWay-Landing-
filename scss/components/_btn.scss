@@ -1,0 +1,15 @@
+@import "../scss-utils/variables";
+@import "../scss-utils/mixins";
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    background-color: $clr-phantom-purple_logo;
+    border-radius: $radius-small;
+    color: $clr-phantom-dark_bg;
+    &:hover{
+        transition: $transition-medium;
+        background-color: $clr-phantom-light_white;
+    }
+}

@@ -1,0 +1,49 @@
+
+@mixin text($fz,$clr,$fw,$ff) {
+    font-size: $fz;
+    color: $clr;
+    font-weight: $fw;
+    font-family: $ff;
+}
+
+@mixin respond-to($media) {
+    @if $media== "phone" {
+        @media (max-width: 375px) {
+            @content;
+        }
+    }
+}
+
+@mixin click() {
+    position: relative;
+    top: 0.1rem;
+}
+
+@mixin flex-row($justify: space-between, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-row-center() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-column($gap: 0) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin flex-column-center() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-align($align) {
+    display: flex;
+    align-items: $align;
+}
+

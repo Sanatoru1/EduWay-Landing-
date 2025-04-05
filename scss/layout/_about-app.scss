@@ -1,0 +1,26 @@
+@import "../scss-utils/variables";
+@import "../scss-utils/mixins";
+
+.about-app {
+  margin: 10rem 0 5rem 0;
+  padding-top: 15rem;
+  height: 57rem;
+  @include flex-column-center;
+  align-items: center;
+  // justify-content: end;
+  text-align: center;
+  .about-app__title {
+    font-size: 7rem;
+    font-weight: 700;
+  }
+  .about-app__subtitle {
+    font-size: 4rem;
+}
+i {
+  margin: 0 1rem 0 1rem;
+}
+  .about-app__description {
+    max-width: 50%;
+    font-weight: 900;
+  }
+}

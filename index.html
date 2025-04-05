@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduWay</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__container container">
+            <div class="header_line">
+                <div class="header-logo">
+                    <a href="./index.html">Edu<i class="fa-solid fa-bell" style="color: #B197FC;"></i>Way
+                    </a>
+                </div>
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="nav__list-item">
+                            <a href="#">About app</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#features">Features</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#questions">Questions</a>
+                        </li>
+                        <!-- <li class="nav__list-item">
+                            <a href="#download">Download</a>
+                        </li> -->
+                        <li class="nav__list-item">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#contact" class="header-btn btn">Download</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__container container">
+            <section class="about-app" id="about-app">
+                <h1 class="about-app__title">Edu<i class="fa-solid fa-bell" style="color: #B197FC;"></i>Way</h1>
+                <h2 class="about-app__subtitle">Больше знаний - меньше опозданий</h2>
+                <p class="about-app__description">
+                    Мобильное приложение на React Native, которое помогает ученикам не опаздывать в школу. Оно
+                    рассчитывает оптимальное время выхода, анализируя пробки, погоду и движение автобусов.
+                </p>
+            </section>
+
+            <section class="features" id="features">
+
+                <div class="features_wrp">
+                    <div class="first-side">
+                        <h2 class="first-side__title"> 
+                            Функционал:
+                        </h2>
+                        <p class="first-side__text main-text">
+                            в нашем приложении нету того чтобы не пригодилось любому опаздывающему школоло
+                        </p>
+                    </div>
+
+                    <div class="second-side">
+                        <img src="./img/images/about-1.jpg" alt="здесь должен быть скриншот с приложения"/>
+                    </div>
+                </div>
+                <div class="features_wrp">
+                    <div class="second-side">
+                        <img src="./img/images/about-1.jpg" alt="здесь должен быть скриншот с приложения" />
+                    </div>
+                    <div class="first-side">
+                        <h2 class="first-side__title">Оформление: </h2>
+
+                        <p class="first-side__text main-text">
+                            наше приложенние имеет красивый и современный дизайн
+                        </p>
+                    </div>
+                </div>
+                <div class="features_wrp">
+                    <div class="first-side">
+                        <h2 class="first-side__title">Технология</h2>
+
+                            <p class="first-side__text main-text">
+                                наш проект пишется на react-native что позволяет делать кроссплатформенные приложения
+                                используя один и тот же код
+                        </p>
+                    </div>
+
+                    <div class="second-side">
+                        <img src="./img/images/about-1.jpg" alt="О e-sense" />
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- <section class="download" id="download">
+                <h2>
+                    Отсканируй qr-code или нажми на него, чтобы установить приложение
+                </h2>
+                <a href="#" class="download-link">
+                    <img src="./img/images/" alt="здесь должна быть qr-code для загрузки приложения">
+                </a>
+            </section> -->
+
+            <section class="questions" id="questions">
+                <h2 class="questions-title">Ответы на вопросы которые  могут  у вас возникнуть<h2>
+    
+    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-title">
+                                За сколько времени до выхода из дома/начала урока я получу уведомление? Можно ли это настроить?
+                            </h2>
+    
+                            <div class="accordion-answer main-text">
+                                по умолчанию собщения отправляются за 15 минут до выхода, но вы можете скоректировать его под себя
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-title">
+                                Как приложение определяет время, за которое я доберусь до школы? (Или до следующего урока, если это применимо)
+                            </h2>
+    
+                            <div class="accordion-answer main-text">
+                                все просто! приложение использует API от Яндекс карт, который показывает время в пути
+                                в зависимости от пробок и времени суток
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-title">
+                                Будет ли приложение работать, если у меня нет интернета? (Особенно в части расчета времени в пути и уведомлений)
+                            </h2>
+    
+                            <div class="accordion-answer main-text">
+                                нет, приложение не будет работать без интернета, т.к почти весь
+                                функционал построен на API и ИИ которые требуют постоянного подключения к интернету
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-title">
+                                Как часто обновляется прогноз погоды в приложении?
+                            </h2>
+    
+                            <div class="accordion-answer main-text">
+                                прогноз погоды обновляется каждые 30 минут, но вы можете вручную обновить его в любое время 
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-title">
+                                Можно ли настроить несколько маршрутов (например, дом-школа, школа-секция)?
+                            </h2>
+    
+                            <div class="accordion-answer main-text">
+                                нет, в приложении можно настроить только 
+                                один маршрут, но мы не отрицаем то  что эта
+                                функция может появиться в будущем
+                            </div>
+                        </div>
+                    </div>
+                
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <!-- <section class="contact" id="contact">
+                <h2 class="contact_title">Связаться с нами</h2>
+                <div class="contact-blocks_wrp">
+                    <div class="contact-block">
+                        <span class="contact-block_name">Динур</span>
+                        <a href="https://t.me/dinnn012" class="telegram-link">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/dinuRCh1k
+                        " class="github-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="contact-block">
+                        <span class="contact-block_name">Даниял</span>
+                        <a href="https://t.me/Eeoneget" class="telegram-link">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/Eeoneget" class="github-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="contact-block"> 
+                        <span class="contact-block_name">Санат</span>
+                        <a href="https://t.me/Sanatoru1" class="telegram-link">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/Sanatoru1" class="github-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div> 
+                </div>
+            </section> -->
+        
+            <h2 class="centered-section__title">Связаться с нами</h2>
+            <section class="contact">
+                <div class="centered-blocks">
+                    <div class="centered-block">
+                        <span class="block-name">Dinur</span>
+                        <a href="https://github.com/dinuRCh1k" class="block-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://t.me/dinnn012" class="block-link">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                    </div>
+                    <div class="centered-block">
+                        <span class="block-name">Daniyal</span>
+                        <a href="https://github.com/Eeoneget" class="block-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://t.me/Eeoneget" class="block-link">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                    </div>
+                    <div class="centered-block">
+                        <span class="block-name">Sanaat</span>
+                        <a href="https://github.com/Sanatoru1" class="block-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://t.me/Sanatoru1" class="block-link">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+    </footer>
+    <script src="./js/dropdown.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+@import "../scss-utils/variables";
+@import "../scss-utils/mixins";
+
+
+.contact {
+    @include flex-row;
+    justify-content: space-between;
+    padding: 3rem 0;
+
+    h2 {
+        display: block;
+        @include text(3rem, inherit, 900, inherit);
+    }
+
+    .contact-blocks_wrp {
+        @include flex-row-center;
+
+        .contact-block {
+            font-size: 4rem;
+            margin: 0 2rem;
+            @include flex-row-center;
+
+            .contact-block_name {
+                display: block;
+                font-size: 2rem;
+            }
+
+            .telegram-link {
+                color: #24A1DE;
+                display: inline-block;
+            }
+
+            .github-link {
+                color: white;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+.centered-section__title{
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+.contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.centered-blocks {
+	display: flex;
+	gap: 20px;
+}
+.centered-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	// background-color: ;
+}
+.block-name {
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.block-link {
+	text-decoration: none;
+	margin: 5px 0;
+    color: #fff;
+    .fa-telegram{
+        font-size: 5rem;
+        color: #24A1DE;
+    }
+    .fa-github{
+        font-size: 5rem;
+    }
+    
+	&:hover {
+		text-decoration: underline;
+	}
+}
+

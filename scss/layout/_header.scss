@@ -1,0 +1,40 @@
+@import "../scss-utils/variables";
+@import "../scss-utils/mixins";
+
+.header{
+    border-bottom: 2px solid #3f3f3f;
+    width: $container-width;
+    z-index: 9;
+    top: 0;
+    background-color: $clr-phantom-dark_bg;
+    padding: 1rem;
+    position:fixed;
+    padding-top: 3rem;
+    .header__container{
+        .header_line{
+            @include flex-row;
+            .header-logo{
+                    a{  
+                        @include text(2.5rem,$clr-phantom-light_white,
+                        600,inherit);
+                    }
+                    i{
+                        margin: 0 0.7rem 0 0.7rem ;
+                    }
+                
+            }
+            .header-nav{
+                .header-nav__list{
+                    @include flex-row;
+                    width: 50rem;
+                    .nav__list-item{
+                        list-style: none;
+                        a{
+                            @include text(1.8rem,$clr-white,400,inherit);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
