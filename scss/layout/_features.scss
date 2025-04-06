@@ -9,7 +9,7 @@
     margin-bottom: $margin-small;
     &_wrp {
         @include flex-row();
-
+        grid-template-columns: 1fr;
         .first-side {
             max-width: 49%;
             font-size: 1.8rem;

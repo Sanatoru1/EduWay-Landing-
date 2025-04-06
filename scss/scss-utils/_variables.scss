@@ -104,5 +104,37 @@ body {
     display: block;
 }
 
+.app-pic{
+    width: 20rem;
+    height: 30rem;
+    position: relative;
+}
+
+.react-icon{
+    width: 70rem;
+    height: 40rem;
+}
+// .first-pic{
+//         position: relative;
+//         object-fit: cover;
+//         width: 34rem;
+//         max-width: 89rem;
+
+//         height: 30rem;
+//         &::before{
+//             content "../images/first-pic.png";
+//             position: absolute; 
+//             top: 0;
+//             right: 0;
+//             width: 60rem;
+//             height: 40rem;
+//         }
+// }
 
 
+// .pop{
+//     top: 0;
+//     left: 0;
+//     width: 60rem !important;
+//     position: absolute;
+// }
